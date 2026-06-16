@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KAIST SoC Global Preview Week 2026</title>
+  <meta name="description" content="KAIST School of Computing Global Preview Week 2026: a fully supported, one-week invitation-based visit program for outstanding students from leading Asian universities." />
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #5c667a;
+      --line: #d9e0ee;
+      --accent: #143c8c;
+      --accent2: #2f6bd8;
+      --soft: #eaf1ff;
+      --gold: #fff5cf;
+      --gold-line: #e6c65b;
+      --gold-text: #5a4300;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .inline-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+    h2 a.inline-link, h3 a.inline-link { color: inherit; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+    header {
+      background: linear-gradient(135deg, #102e6d 0%, #174cae 58%, #2f6bd8 100%);
+      color: white;
+      padding: 54px 0 46px;
+    }
+    .eyebrow { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; opacity: .88; }
+    h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1.08; margin: 12px 0 16px; }
+    .lead { font-size: 20px; max-width: 900px; opacity: .96; margin: 0 0 18px; }
+    .funding-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: var(--gold-text);
+      border: 1px solid var(--gold-line);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 850;
+      margin: 8px 0 18px;
+    }
+    .funding-banner span { font-weight: 650; }
+    .hero-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 28px; }
+    .hero-card { background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.22); border-radius: 16px; padding: 18px; }
+    .hero-card strong { display: block; font-size: 15px; opacity: .8; margin-bottom: 4px; }
+    .hero-card span { font-size: 18px; font-weight: 700; }
+    .hero-card.highlight { background: rgba(255,245,207,.18); border-color: rgba(255,245,207,.6); }
+    nav { background: var(--card); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 1; }
+    nav .wrap { display: flex; gap: 20px; padding-top: 12px; padding-bottom: 12px; overflow-x: auto; }
+    nav a { color: var(--text); font-weight: 650; font-size: 14px; white-space: nowrap; }
+    section { padding: 42px 0; }
+    h2 { font-size: 30px; line-height: 1.2; margin: 0 0 16px; }
+    h3 { font-size: 20px; margin: 0 0 8px; }
+    p { margin: 0 0 14px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: 0 8px 20px rgba(23,32,51,.04); }
+    .support-card { background: #fffdf3; border-color: var(--gold-line); }
+    .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; background: var(--soft); color: var(--accent); font-weight: 700; font-size: 13px; margin: 0 6px 8px 0; }
+    .pill.gold { background: var(--gold); color: var(--gold-text); border: 1px solid var(--gold-line); }
+    ul { margin: 8px 0 0 20px; padding: 0; }
+    li { margin: 6px 0; }
+    .timeline { display: grid; gap: 12px; }
+    .day { display: grid; grid-template-columns: 105px 1fr; gap: 16px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+    .day .date { color: var(--accent); font-weight: 800; }
+    .note { background: #fff8e6; border: 1px solid #f3d58c; border-radius: 16px; padding: 18px; color: #4d3a09; }
+    footer { padding: 34px 0 52px; color: var(--muted); border-top: 1px solid var(--line); background: #fff; }
+    .button {
+      display: inline-block;
+      background: white;
+      color: var(--accent);
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-weight: 800;
+      border: 1px solid rgba(255,255,255,.28);
+    }
+    .button:hover { text-decoration: none; background: #eef4ff; }
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 760px) {
+      .hero-grid, .grid { grid-template-columns: 1fr; }
+      .day { grid-template-columns: 1fr; }
+      header { padding: 42px 0 34px; }
+      .funding-banner { border-radius: 14px; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow"><a class="inline-link" href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> <a class="inline-link" href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a></div>
+      <h1>Global Preview Week 2026</h1>
+      <p class="lead">A fully supported, one-week invitation-based visit program for outstanding students from leading Asian universities to experience research, graduate study, lab culture, and student life at <a class="inline-link" href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> <a class="inline-link" href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a>.</p>
+      <div class="funding-banner">Fully supported by <a class="inline-link" href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> <span>· Travel, accommodation, meals, and local program expenses covered</span></div>
+      <br>
+      <a class="button" href="#nomination">Nomination Information</a>
+      <div class="hero-grid">
+        <div class="hero-card"><strong>Program dates</strong><span>September 7–11, 2026</span></div>
+        <div class="hero-card"><strong>Arrival / departure</strong><span>Sept. 6 / Sept. 12</span></div>
+        <div class="hero-card"><strong>Location</strong><span><a class="inline-link" href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a>, Daejeon + Seoul, South Korea</span></div>
+        <div class="hero-card highlight"><strong>Financial support</strong><span>No program fee; KAIST-supported participation</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="wrap">
+      <a href="#about-gpw">About GPW</a>
+      <a href="#about-soc">About SoC</a>
+      <a href="#program">Program</a>
+      <a href="#eligibility">Eligibility</a>
+      <a href="#support">Support</a>
+      <a href="#nomination">Nomination</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about-gpw">
+      <div class="wrap grid">
+        <div>
+          <h2>About Global Preview Week</h2>
+          <p>KAIST SoC Global Preview Week is a short, intensive invitation program designed to introduce promising students to the research environment and graduate programs of <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> <a href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a>.</p>
+          <p>The main program will be held at <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> in Daejeon, with a one-day cultural and networking visit to Seoul before departure. Participants will meet faculty members and graduate students, visit research labs, learn about graduate admissions and scholarships, and explore research internship or graduate study opportunities at <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a>.</p>
+          <p><strong><a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> will provide financial support for selected participants</strong>, covering round-trip airfare, accommodation, meals, and local program-related expenses during the official GPW period.</p>
+        </div>
+        <div class="card support-card">
+          <h3>At a glance</h3>
+          <p><span class="pill gold">Fully supported</span><span class="pill">Invitation-based</span><span class="pill">20–30 participants</span></p>
+          <ul>
+            <li><strong>Dates:</strong> September 7–11, 2026</li>
+            <li><strong>Arrival:</strong> September 6, 2026</li>
+            <li><strong>Departure:</strong> September 12, 2026</li>
+            <li><strong>Location:</strong> <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a>, Daejeon + Seoul, South Korea</li>
+            <li><strong>Support:</strong> airfare, accommodation, meals, and local program-related expenses</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-soc">
+      <div class="wrap grid">
+        <div class="card">
+          <h2>About <a class="inline-link" href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a>, <a class="inline-link" href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a></h2>
+          <p><a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> <a href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a> is one of the leading computer science schools in Asia. Its faculty and students conduct research across a broad range of computing areas, including artificial intelligence, systems, cybersecurity, data science, software engineering, theory, human-computer interaction, graphics, and interdisciplinary computing.</p>
+          <p>The School offers a highly research-oriented environment for graduate study, with opportunities to work closely with faculty members and graduate students on internationally competitive research projects.</p>
+        </div>
+        <div>
+          <h2>Program Goals</h2>
+          <ul>
+            <li>Introduce <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> <a href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a> research areas and graduate programs.</li>
+            <li>Help students explore research topics and possible faculty/lab matches.</li>
+            <li>Build long-term academic connections with leading universities in Asia.</li>
+            <li>Encourage future research internships and graduate applications to <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="program">
+      <div class="wrap">
+        <h2>Tentative Program</h2>
+        <p>The detailed schedule may be adjusted, but the program is expected to include the following components.</p>
+        <div class="timeline">
+          <div class="day"><div class="date">Sept. 6</div><div><strong>Arrival in Korea</strong><br>Arrival, transfer to Daejeon, check-in, and informal welcome.</div></div>
+          <div class="day"><div class="date">Sept. 7</div><div><strong>KAIST and SoC introduction</strong><br>School overview, graduate program introduction, campus orientation, and welcome session.</div></div>
+          <div class="day"><div class="date">Sept. 8</div><div><strong>Research seminars and lab visits</strong><br>Faculty research talks, lab tours, and discussions with graduate students.</div></div>
+          <div class="day"><div class="date">Sept. 9</div><div><strong>Mentoring and research matching</strong><br>Faculty/student mentoring, research interest sessions, and graduate admissions Q&amp;A.</div></div>
+          <div class="day"><div class="date">Sept. 10</div><div><strong>Mini-project or research discussion</strong><br>Small-group discussions, student presentations, and networking with international graduate students.</div></div>
+          <div class="day"><div class="date">Sept. 11</div><div><strong>Seoul cultural and networking visit</strong><br>One-day cultural visit and networking program in Seoul before departure.</div></div>
+          <div class="day"><div class="date">Sept. 12</div><div><strong>Departure</strong><br>Participants return to their home countries.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="eligibility">
+      <div class="wrap grid">
+        <div class="card">
+          <h2>Who Should Be Nominated?</h2>
+          <p>We welcome nominations of strong students who may be interested in graduate study or research internships at <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a>.</p>
+          <ul>
+            <li>Advanced undergraduate students or master’s students.</li>
+            <li>Students in Computer Science, Computer Engineering, AI, Data Science, Cybersecurity, Electrical Engineering, Mathematics, or related fields.</li>
+            <li>Students with strong academic records and research potential.</li>
+            <li>Students who can participate in English and travel to Korea during the program period.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Selection Criteria</h2>
+          <ul>
+            <li>Academic excellence and preparation in computing-related fields.</li>
+            <li>Research potential and motivation for graduate study.</li>
+            <li>Fit with <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> <a href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a> research areas.</li>
+            <li>Availability for the full program period, including visa and travel feasibility.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="wrap">
+        <h2>Financial Support</h2>
+        <div class="card support-card">
+          <p><strong>There is no program fee for selected participants.</strong> <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> will provide financial support covering round-trip airfare, accommodation, meals, and local program-related expenses during the official GPW period.</p>
+          <p>Personal expenses and costs outside the official program period will not be covered. Visa requirements and travel documents should be checked by each participant as early as possible after selection.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="nomination">
+      <div class="wrap grid">
+        <div>
+          <h2>Nomination Process</h2>
+          <p>GPW is designed as a nomination-based invitation program for selected partner universities. We ask each invited department or faculty contact to nominate 3–5 outstanding students.</p>
+          <p>Students formally nominated by their department will receive priority consideration. While <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> will make the final selection, we expect that most nominated students who meet the eligibility requirements will be invited, subject to overall program capacity and visa/logistical constraints.</p>
+        </div>
+        <div class="card">
+          <h3>Expected materials from students</h3>
+          <ul>
+            <li>CV</li>
+            <li>Transcript</li>
+            <li>Research interests and motivation statement</li>
+            <li>Preferred <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> research areas or labs, if any</li>
+            <li>Passport and visa-related information</li>
+          </ul>
+          <p><strong>Expected program size:</strong> approximately 20–30 students in total.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <div class="card">
+          <p><strong><a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> <a href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a></strong></p>
+          <p>Program inquiry: <a href="mailto:minsukk@kaist.ac.kr">minsukk@kaist.ac.kr</a></p>
+          <p>KAIST website: <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">https://www.kaist.ac.kr/</a></p>
+          <p>School website: <a href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">https://cs.kaist.ac.kr/</a></p>
+          <p>KAIST admissions information: <a href="https://www.kaist.ac.kr/en/html/admission/0201.html" target="_blank" rel="noopener">KAIST Graduate Admissions</a></p>
+        </div>
+        <p class="note" style="margin-top:18px;">This page is for information purposes. Official nomination and application instructions will be shared with invited departments and nominated students.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> SoC Global Preview Week 2026 · <a href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a>, <a href="https://www.kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a> · Daejeon and Seoul, South Korea</p>
+    </div>
+  </footer>
+</body>
+</html>
