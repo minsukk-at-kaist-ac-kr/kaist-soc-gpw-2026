@@ -1,20 +1,25 @@
-# KAIST SoC Global Preview Week 2026
+# KAIST SoC GPW 2026 NTU example site
 
-This is a simple GitHub Pages website for the KAIST School of Computing Global Preview Week 2026.
+Upload these files/folders to the root of the GitHub Pages repository.
 
-## How to publish with GitHub Pages
+- `/index.html`: minimal landing page for direct root access.
+- `/gpw-a7f3k9/index.html`: NTU invitation/application page.
+- `/assets/kaist-1.jpg`: hero image.
+- `/assets/kaist-logo.png`: KAIST logo.
+- `/robots.txt`: prevents indexing.
 
-1. Create a new GitHub repository, for example: `kaist-soc-gpw-2026`.
-2. Upload `index.html` to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/root` folder.
-6. Save. The page will be available at a URL like:
-   `https://<github-username>.github.io/kaist-soc-gpw-2026/`
+The Apply button is a placeholder and should be replaced with the finalized Google Form link.
 
-## Suggested edits before publishing
 
-- Confirm the contact email.
-- Add the final nomination deadline when decided.
-- Add a PDF flyer link if one is created later.
-- Add a Google Form link only if direct application/nomination collection is desired.
+## Revision notes
+- Transparent KAIST logo is placed directly on the hero background.
+- KAIST links use English KAIST URLs where available.
+- YouTube iframe includes referrer policy and a direct YouTube fallback link.
+
+
+Update v3: School of Computing links point to https://cs.kaist.ac.kr/. The YouTube embed has been replaced with a direct YouTube video card to avoid player configuration errors.
+
+
+## Google Analytics
+
+GA4 tag installed with Measurement ID `G-GB5215L1R8` on all HTML pages. Use GA4 Pages and screens → Page path and screen class to distinguish school-specific pages such as `/gpw-a7f3k9/`.
