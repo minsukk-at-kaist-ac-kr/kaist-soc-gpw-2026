@@ -11,3 +11,6 @@ Upload the contents of this package to the root of the GitHub Pages repository. 
 - `CNAME`: GitHub Pages custom domain configuration.
 
 GA4 tag installed with Measurement ID `G-GB5215L1R8` on all HTML pages. Use GA4 Pages and screens → Page path and screen class to distinguish school-specific pages.
+
+
+Update 2026-07-10 09:40 KST: all Apply Now buttons were changed to the new Google Form link because of a Google Forms issue. A small red notice appears next to each Apply Now button.
