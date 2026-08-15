@@ -4,31 +4,374 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>KAIST SoC Global Preview Week 2026</title>
+  <meta name="description" content="KAIST School of Computing Global Preview Week 2026: tentative program schedule and participant information." />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB5215L1R8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-GB5215L1R8');
   </script>
   <style>
-    body { margin:0; min-height:100vh; display:grid; place-items:center; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:#f7f9fc; color:#172033; }
-    .card { max-width:760px; margin:24px; padding:34px; background:#fff; border:1px solid #d9e0ee; border-radius:22px; box-shadow:0 14px 30px rgba(23,32,51,.08); text-align:center; }
-    img { width:180px; max-width:60%; margin-bottom:14px; }
-    h1 { margin:6px 0 12px; line-height:1.15; }
-    p { color:#5c667a; font-size:17px; line-height:1.65; }
-    a { color:#1f57b8; text-decoration:none; font-weight:700; }
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #5c667a;
+      --line: #d9e0ee;
+      --accent: #143c8c;
+      --accent2: #2f6bd8;
+      --soft: #eaf1ff;
+      --gold: #fff5cf;
+      --gold-line: #e6c65b;
+      --gold-text: #5a4300;
+      --green: #e7f8ef;
+      --green-line: #87d2a7;
+      --green-text: #13542e;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 22px; }
+    header {
+      color: white;
+      padding: 28px 0 48px;
+      background:
+        linear-gradient(90deg, rgba(9,28,68,.86) 0%, rgba(20,60,140,.72) 48%, rgba(47,107,216,.48) 100%),
+        url('assets/kaist-1.jpg') center/cover no-repeat;
+    }
+    .topbar { display:flex; align-items:center; justify-content:space-between; gap:18px; margin-bottom:38px; }
+    .logo { display:inline-flex; align-items:center; gap:12px; padding:0; border-radius:0; background:transparent; box-shadow:none; }
+    .logo img { height:56px; width:auto; display:block; filter: drop-shadow(0 2px 10px rgba(255,255,255,.45)) drop-shadow(0 2px 8px rgba(0,0,0,.28)); }
+    .logo span { display:none; }
+    .toplink { color:#fff; font-weight:750; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25); padding:9px 12px; border-radius:999px; }
+    .eyebrow { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; opacity: .9; }
+    h1 { font-size: clamp(34px, 5vw, 58px); line-height: 1.07; margin: 12px 0 16px; max-width:980px; }
+    .lead { font-size: 20px; max-width: 940px; opacity: .98; margin: 0 0 18px; text-shadow:0 1px 0 rgba(0,0,0,.15); }
+    .hero-actions { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top: 10px; }
+    .button {
+      display: inline-block; background: white; color: var(--accent);
+      padding: 12px 16px; border-radius: 12px; font-weight: 800;
+      border: 1px solid rgba(255,255,255,.28); box-shadow: 0 6px 18px rgba(12,30,70,.18);
+    }
+    .button:hover { text-decoration: none; background: #eef4ff; }
+    .hero-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 28px; }
+    .hero-card { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.26); border-radius: 16px; padding: 18px; backdrop-filter: blur(3px); }
+    .hero-card strong { display: block; font-size: 15px; opacity: .84; margin-bottom: 4px; }
+    .hero-card span { font-size: 18px; font-weight: 760; }
+    .hero-card.highlight { background: rgba(255,245,207,.22); border-color: rgba(255,245,207,.72); }
+    nav { background: var(--card); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 2; }
+    nav .wrap { display: flex; gap: 20px; padding-top: 12px; padding-bottom: 12px; overflow-x: auto; }
+    nav a { color: var(--text); font-weight: 650; font-size: 14px; white-space: nowrap; }
+    section { padding: 42px 0; }
+    h2 { font-size: 30px; line-height: 1.2; margin: 0 0 16px; }
+    h3 { font-size: 20px; margin: 0 0 8px; }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: 0 8px 20px rgba(23,32,51,.04); }
+    .note { background: #fff8e6; border: 1px solid #f3d58c; border-radius: 16px; padding: 18px; color: #4d3a09; }
+    .source { font-size: 12px; color: var(--muted); margin-top: 10px; }
+
+    .schedule-shell {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(23,32,51,.04);
+    }
+    .schedule-scroll { overflow-x: auto; }
+    .schedule-table {
+      width: 100%;
+      min-width: 1040px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .schedule-table th,
+    .schedule-table td {
+      padding: 15px 14px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+    .schedule-table th:last-child,
+    .schedule-table td:last-child { border-right: 0; }
+    .schedule-table tbody tr:last-child td { border-bottom: 0; }
+    .schedule-table thead th {
+      background: #eef3fb;
+      color: var(--accent);
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 850;
+    }
+    .schedule-table thead th:first-child { width: 105px; }
+    .schedule-table .date { display:block; color: var(--muted); font-weight:650; margin-top:2px; }
+    .schedule-table .time {
+      background: #fafbfd;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .schedule-table .slot {
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 700;
+      background: #fff;
+    }
+    .schedule-table .lunch { background: #fffdf3; }
+    .schedule-table .research { background: #f6f9ff; }
+    .schedule-table .closing { background: #f8fffb; }
+    .schedule-table .empty { color: #9aa4b5; font-weight: 600; }
+    .schedule-caption { padding: 14px 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+
+    .mobile-schedule { display:none; }
+    .day-card { background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:0 8px 20px rgba(23,32,51,.04); }
+    .day-card + .day-card { margin-top:16px; }
+    .day-title { background:#eef3fb; color:var(--accent); font-weight:850; padding:14px 16px; }
+    .day-row { display:grid; grid-template-columns:92px 1fr; border-top:1px solid var(--line); }
+    .day-time { background:#fafbfd; color:var(--accent); font-weight:800; font-size:12px; padding:12px 11px; }
+    .day-slot { padding:12px 14px; font-weight:680; font-size:14px; }
+
+    .info-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+    footer { padding: 34px 0 52px; color: var(--muted); border-top: 1px solid var(--line); background: #fff; }
+
+    @media (max-width: 990px) { .hero-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 760px) {
+      .hero-grid, .info-grid { grid-template-columns: 1fr; }
+      header { padding: 22px 0 34px; }
+      .topbar { align-items:flex-start; flex-direction:column; margin-bottom:28px; }
+      .schedule-shell { display:none; }
+      .mobile-schedule { display:block; }
+    }
   </style>
 </head>
 <body>
-  <main class="card">
-    <img src="assets/kaist-logo.png" alt="KAIST logo" />
-    <h1>KAIST SoC Global Preview Week 2026</h1>
-    <p>This is an invitation-based program. Please access the program information and application page through the unique link provided by your department or university.</p>
-    <p>For program inquiries, please contact <strong>Prof. Min Suk Kang</strong> (International Collaboration Committee Chair at SoC) at <a href="mailto:minsukk@kaist.ac.kr">minsukk@kaist.ac.kr</a>.</p>
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <a class="logo" href="https://www.kaist.ac.kr/en/" target="_blank" rel="noopener"><img src="assets/kaist-logo.png" alt="KAIST logo" /><span>KAIST</span></a>
+        <a class="toplink" href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">School of Computing</a>
+      </div>
+      <div class="eyebrow">KAIST School of Computing</div>
+      <h1>Global Preview Week 2026</h1>
+      <p class="lead">An invitation-based program for selected students to experience research, graduate study, lab culture, and student life at KAIST School of Computing.</p>
+      <div class="hero-actions">
+        <a class="button" href="#program">View Tentative Schedule</a>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-card"><strong>Main program</strong><span>September 7–11, 2026</span></div>
+        <div class="hero-card"><strong>Arrival / departure</strong><span>Sept. 6 / Sept. 12</span></div>
+        <div class="hero-card"><strong>Location</strong><span>KAIST, Daejeon + Seoul</span></div>
+        <div class="hero-card highlight"><strong>Program status</strong><span>Tentative schedule</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="wrap">
+      <a href="#program">Tentative Schedule</a>
+      <a href="#about">About GPW</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="program">
+      <div class="wrap">
+        <h2>Tentative Program Schedule</h2>
+        <p class="muted">The schedule below is tentative. Individual sessions, speakers, and activities may be adjusted as the program is finalized.</p>
+
+        <div class="schedule-shell" style="margin-top:20px;">
+          <div class="schedule-scroll">
+            <table class="schedule-table" aria-label="KAIST SoC Global Preview Week 2026 tentative schedule">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Monday<span class="date">Sep. 7 · Welcome to KAIST</span></th>
+                  <th>Tuesday<span class="date">Sep. 8 · Community &amp; Research</span></th>
+                  <th>Wednesday<span class="date">Sep. 9 · Research Exploration</span></th>
+                  <th>Thursday<span class="date">Sep. 10 · Research &amp; Closing</span></th>
+                  <th>Friday<span class="date">Sep. 11 · Seoul Experience</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="time">10:00–11:00</td>
+                  <td class="slot">Welcome &amp; Introduction to KAIST SoC</td>
+                  <td class="slot research">Faculty Research Talks</td>
+                  <td class="slot research">Faculty Research Talks</td>
+                  <td class="slot research">Faculty Research Talks / Special Session</td>
+                  <td class="slot">Travel to Seoul / Seoul Program</td>
+                </tr>
+                <tr>
+                  <td class="time">11:00–12:00</td>
+                  <td class="slot">Participant Introductions &amp; Ice Breaking</td>
+                  <td class="slot research">Faculty Research Talk(s) and/or Parallel Lab Tours</td>
+                  <td class="slot research">Faculty Research Talk(s) and/or Parallel Lab Tours</td>
+                  <td class="slot research">Parallel Research Exploration</td>
+                  <td class="slot">Seoul Program</td>
+                </tr>
+                <tr>
+                  <td class="time">12:00–13:30</td>
+                  <td class="slot lunch">Welcome Lunch with Faculty</td>
+                  <td class="slot lunch">Lunch with KAIST Students from Your Home Country</td>
+                  <td class="slot lunch">Lunch with Graduate Students by Research Area I</td>
+                  <td class="slot lunch">Lunch with Graduate Students by Research Area II</td>
+                  <td class="slot lunch">Group Lunch in Seoul</td>
+                </tr>
+                <tr>
+                  <td class="time">13:30–14:30</td>
+                  <td class="slot">KAIST Campus Tour</td>
+                  <td class="slot">FUN Activity</td>
+                  <td class="slot">FUN Activity</td>
+                  <td class="slot">Security@KAIST Poster Session</td>
+                  <td class="slot">Technology / Industry / Cultural Visit</td>
+                </tr>
+                <tr>
+                  <td class="time">14:30–15:30</td>
+                  <td class="slot">KAIST Campus Tour</td>
+                  <td class="slot">Student-led Demonstrations &amp; Activities</td>
+                  <td class="slot research">Research Demos / Lab Visits / Student Interaction</td>
+                  <td class="slot">FUN Activity</td>
+                  <td class="slot">Seoul Program / Cultural Experience</td>
+                </tr>
+                <tr>
+                  <td class="time">15:30–16:30</td>
+                  <td class="slot research">Faculty Research Talks</td>
+                  <td class="slot research">Parallel Research Exploration</td>
+                  <td class="slot research">Parallel Research Exploration</td>
+                  <td class="slot closing">Ask Us Anything: Graduate Study at KAIST</td>
+                  <td class="slot">Cultural / Free Exploration</td>
+                </tr>
+                <tr>
+                  <td class="time">16:30–17:00</td>
+                  <td class="slot">Day 1 Wrap-up</td>
+                  <td class="slot">Open Networking / Day Wrap-up</td>
+                  <td class="slot">Open Networking / Day Wrap-up</td>
+                  <td class="slot closing">Closing Session</td>
+                  <td class="slot empty">—</td>
+                </tr>
+                <tr>
+                  <td class="time">Evening</td>
+                  <td class="slot lunch">Themed Welcome Dinners</td>
+                  <td class="slot">Flexible Dinner</td>
+                  <td class="slot">Flexible Dinner</td>
+                  <td class="slot">Flexible Dinner</td>
+                  <td class="slot">Back to Daejeon</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="schedule-caption">Only session titles are shown here. Detailed logistics and session-specific instructions will be provided to selected participants separately.</div>
+        </div>
+
+        <div class="mobile-schedule" style="margin-top:20px;">
+          <div class="day-card">
+            <div class="day-title">Monday, Sep. 7 · Welcome to KAIST</div>
+            <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Welcome &amp; Introduction to KAIST SoC</div></div>
+            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Participant Introductions &amp; Ice Breaking</div></div>
+            <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Welcome Lunch with Faculty</div></div>
+            <div class="day-row"><div class="day-time">13:30–15:30</div><div class="day-slot">KAIST Campus Tour</div></div>
+            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Faculty Research Talks</div></div>
+            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Day 1 Wrap-up</div></div>
+            <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Themed Welcome Dinners</div></div>
+          </div>
+
+          <div class="day-card">
+            <div class="day-title">Tuesday, Sep. 8 · Community &amp; Research</div>
+            <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Faculty Research Talks</div></div>
+            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Faculty Research Talk(s) and/or Parallel Lab Tours</div></div>
+            <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Lunch with KAIST Students from Your Home Country</div></div>
+            <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">FUN Activity</div></div>
+            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">Student-led Demonstrations &amp; Activities</div></div>
+            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Parallel Research Exploration</div></div>
+            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Open Networking / Day Wrap-up</div></div>
+            <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Flexible Dinner</div></div>
+          </div>
+
+          <div class="day-card">
+            <div class="day-title">Wednesday, Sep. 9 · Research Exploration</div>
+            <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Faculty Research Talks</div></div>
+            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Faculty Research Talk(s) and/or Parallel Lab Tours</div></div>
+            <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Lunch with Graduate Students by Research Area I</div></div>
+            <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">FUN Activity</div></div>
+            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">Research Demos / Lab Visits / Student Interaction</div></div>
+            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Parallel Research Exploration</div></div>
+            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Open Networking / Day Wrap-up</div></div>
+            <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Flexible Dinner</div></div>
+          </div>
+
+          <div class="day-card">
+            <div class="day-title">Thursday, Sep. 10 · Research &amp; Closing</div>
+            <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Faculty Research Talks / Special Session</div></div>
+            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Parallel Research Exploration</div></div>
+            <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Lunch with Graduate Students by Research Area II</div></div>
+            <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">Security@KAIST Poster Session</div></div>
+            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">FUN Activity</div></div>
+            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Ask Us Anything: Graduate Study at KAIST</div></div>
+            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Closing Session</div></div>
+            <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Flexible Dinner</div></div>
+          </div>
+
+          <div class="day-card">
+            <div class="day-title">Friday, Sep. 11 · Seoul Experience</div>
+            <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Travel to Seoul / Seoul Program</div></div>
+            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Seoul Program</div></div>
+            <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Group Lunch in Seoul</div></div>
+            <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">Technology / Industry / Cultural Visit</div></div>
+            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">Seoul Program / Cultural Experience</div></div>
+            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Cultural / Free Exploration</div></div>
+            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">—</div></div>
+            <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Back to Daejeon</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap info-grid">
+        <div class="card">
+          <h2>About Global Preview Week</h2>
+          <p>KAIST SoC Global Preview Week is an invitation-based program designed to introduce selected students to the research environment, graduate programs, faculty, laboratories, graduate students, and campus life of KAIST School of Computing.</p>
+          <p>The main program runs at KAIST in Daejeon from Monday through Thursday, followed by a one-day Seoul experience on Friday.</p>
+        </div>
+        <div class="card">
+          <h2>For Selected Participants</h2>
+          <p>Please follow the travel, visa, accommodation, and reimbursement instructions sent directly by the GPW organizers. Detailed session information will be shared as individual program components are confirmed.</p>
+          <p class="muted">Official arrival: September 6 · Official departure: September 12</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <div class="card">
+          <p><strong>KAIST School of Computing</strong></p>
+          <p>Program inquiry: <strong>Prof. Min Suk Kang</strong> (International Collaboration Committee Chair at SoC; <a href="mailto:minsukk@kaist.ac.kr">minsukk@kaist.ac.kr</a>)</p>
+          <p>School website: <a href="https://cs.kaist.ac.kr/" target="_blank" rel="noopener">KAIST School of Computing official website</a></p>
+          <p>KAIST website: <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noopener">https://www.kaist.ac.kr/en/</a></p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="wrap">
+      <p>KAIST SoC Global Preview Week 2026 · School of Computing, KAIST · Daejeon and Seoul, South Korea</p>
+    </div>
+  </footer>
 </body>
 </html>
