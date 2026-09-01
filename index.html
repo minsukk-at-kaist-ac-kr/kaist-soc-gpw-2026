@@ -144,6 +144,8 @@
     .day-time { background:#fafbfd; color:var(--accent); font-weight:800; font-size:12px; padding:12px 11px; }
     .day-slot { padding:12px 14px; font-weight:680; font-size:14px; }
 
+    .session-meta { display:block; margin-top:4px; color:var(--muted); font-size:12px; font-weight:650; line-height:1.35; }
+    .schedule-table .break { background:#fafbfd; color:var(--muted); font-weight:650; }
     .info-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
     footer { padding: 34px 0 52px; color: var(--muted); border-top: 1px solid var(--line); background: #fff; }
 
@@ -191,7 +193,7 @@
     <section id="program">
       <div class="wrap">
         <h2>Tentative Program Schedule</h2>
-        <p class="muted">The schedule below is tentative. Individual sessions, speakers, and activities may be adjusted as the program is finalized.</p>
+        <p class="muted">The schedule below is tentative. Individual sessions and activities may be adjusted as the program is finalized.</p>
 
         <div class="schedule-shell" style="margin-top:20px;">
           <div class="schedule-scroll">
@@ -208,19 +210,38 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="time">10:00–11:00</td>
-                  <td class="slot">Welcome &amp; Introduction to KAIST SoC</td>
-                  <td class="slot research">Faculty Research Talks</td>
-                  <td class="slot research">Faculty Research Talks</td>
-                  <td class="slot research">Faculty Research Talks / Special Session</td>
+                  <td class="time">10:00–10:30</td>
+                  <td class="slot" rowspan="2">Welcome &amp; Introduction to KAIST SoC</td>
+                  <td class="slot research">Faculty Research Talk<span class="session-meta">Min Suk Kang · Emerging Cyber Threats and Agentic-Programmable Defenses</span></td>
+                  <td class="slot research">Faculty Research Talk<span class="session-meta">Martin Ziegler · Computer Science for CONTINUOUS Data</span></td>
+                  <td class="slot research">Faculty Research Talk<span class="session-meta">Joseph Seering · Multi-Level Foundations for Social Simulation</span></td>
                   <td class="slot">Travel to Seoul / Seoul Program</td>
                 </tr>
                 <tr>
-                  <td class="time">11:00–12:00</td>
-                  <td class="slot">Participant Introductions &amp; Ice Breaking</td>
-                  <td class="slot research">Faculty Research Talk(s) and/or Parallel Lab Tours</td>
-                  <td class="slot research">Faculty Research Talk(s) and/or Parallel Lab Tours</td>
-                  <td class="slot research">Parallel Research Exploration</td>
+                  <td class="time">10:30–11:00</td>
+                  <td class="slot research">Faculty Research Talk<span class="session-meta">Minhyuk Sung · Generative Modeling Beyond Scale</span></td>
+                  <td class="slot research">Faculty Research Talk<span class="session-meta">Daehyung Park · Robust Intelligence &amp; Robotics</span></td>
+                  <td class="slot">KAIST SoC &amp; Graduate Admissions for International Students<span class="session-meta">Youngjin Kwon</span></td>
+                  <td class="slot">Seoul Program</td>
+                </tr>
+                <tr>
+                  <td class="time">11:00–11:15</td>
+                  <td class="slot" rowspan="3">Participant Introductions &amp; Ice Breaking</td>
+                  <td class="slot break">Break</td>
+                  <td class="slot break">Break</td>
+                  <td class="slot" rowspan="3">Continued Discussion &amp; Q&amp;A</td>
+                  <td class="slot">Seoul Program</td>
+                </tr>
+                <tr>
+                  <td class="time">11:15–11:45</td>
+                  <td class="slot research">Faculty Research Talk<span class="session-meta">Sung-eui Yoon · Scalable Spatial and Embodied Intelligence</span></td>
+                  <td class="slot research">Faculty Research Talk<span class="session-meta">Alice Oh · Multilingual Multicultural LLMs</span></td>
+                  <td class="slot">Seoul Program</td>
+                </tr>
+                <tr>
+                  <td class="time">11:45–12:00</td>
+                  <td class="slot break">Q&amp;A / Transition</td>
+                  <td class="slot break">Q&amp;A / Transition</td>
                   <td class="slot">Seoul Program</td>
                 </tr>
                 <tr>
@@ -233,39 +254,42 @@
                 </tr>
                 <tr>
                   <td class="time">13:30–14:30</td>
-                  <td class="slot">KAIST Campus Tour</td>
                   <td class="slot">FUN Activity</td>
                   <td class="slot">FUN Activity</td>
-                  <td class="slot">Security@KAIST Poster Session</td>
+                  <td class="slot">KAIST Visitor Center Tour</td>
+                  <td class="slot research" rowspan="2">Security@KAIST Poster Session</td>
                   <td class="slot">Technology / Industry / Cultural Visit</td>
                 </tr>
                 <tr>
                   <td class="time">14:30–15:30</td>
-                  <td class="slot">KAIST Campus Tour</td>
-                  <td class="slot">Student-led Demonstrations &amp; Activities</td>
-                  <td class="slot research">Research Demos / Lab Visits / Student Interaction</td>
-                  <td class="slot">FUN Activity</td>
+                  <td class="slot">KAIST Campus Tour / Vision Hall</td>
+                  <td class="slot research">Lab Visits</td>
+                  <td class="slot research">Lab Visits</td>
                   <td class="slot">Seoul Program / Cultural Experience</td>
                 </tr>
                 <tr>
-                  <td class="time">15:30–16:30</td>
-                  <td class="slot research">Faculty Research Talks</td>
-                  <td class="slot research">Parallel Research Exploration</td>
-                  <td class="slot research">Parallel Research Exploration</td>
-                  <td class="slot closing">Ask Us Anything: Graduate Study at KAIST</td>
-                  <td class="slot">Cultural / Free Exploration</td>
+                  <td class="time">15:30–16:00</td>
+                  <td class="slot research">Faculty Research Talk<span class="session-meta">Sang Kil Cha · Building Trust in Software</span></td>
+                  <td class="slot research" rowspan="2">Lab Visits</td>
+                  <td class="slot research" rowspan="2">Lab Visits</td>
+                  <td class="slot research" rowspan="2">Lab Visits</td>
+                  <td class="slot" rowspan="2">Cultural / Free Exploration</td>
+                </tr>
+                <tr>
+                  <td class="time">16:00–16:30</td>
+                  <td class="slot research">Faculty Research Talk<span class="session-meta">Jun Han · Sensing-augmented Physical AI</span></td>
                 </tr>
                 <tr>
                   <td class="time">16:30–17:00</td>
                   <td class="slot">Day 1 Wrap-up</td>
-                  <td class="slot">Open Networking / Day Wrap-up</td>
-                  <td class="slot">Open Networking / Day Wrap-up</td>
+                  <td class="slot">Day 2 Wrap-up</td>
+                  <td class="slot">Day 3 Wrap-up</td>
                   <td class="slot closing">Closing Session</td>
                   <td class="slot empty">—</td>
                 </tr>
                 <tr>
                   <td class="time">Evening</td>
-                  <td class="slot lunch">Themed Welcome Dinners</td>
+                  <td class="slot">Flexible Dinner</td>
                   <td class="slot">Flexible Dinner</td>
                   <td class="slot">Flexible Dinner</td>
                   <td class="slot">Flexible Dinner</td>
@@ -274,7 +298,7 @@
               </tbody>
             </table>
           </div>
-          <div class="schedule-caption">Only session titles are shown here. Detailed logistics and session-specific instructions will be provided to selected participants separately.</div>
+          <div class="schedule-caption">The program schedule is tentative. Detailed logistics and lab-visit assignments will be provided to selected participants separately.</div>
         </div>
 
         <div class="mobile-schedule" style="margin-top:20px;">
@@ -283,57 +307,63 @@
             <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Welcome &amp; Introduction to KAIST SoC</div></div>
             <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Participant Introductions &amp; Ice Breaking</div></div>
             <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Welcome Lunch with Faculty</div></div>
-            <div class="day-row"><div class="day-time">13:30–15:30</div><div class="day-slot">KAIST Campus Tour</div></div>
-            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Faculty Research Talks</div></div>
+            <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">FUN Activity</div></div>
+            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">KAIST Campus Tour / Vision Hall</div></div>
+            <div class="day-row"><div class="day-time">15:30–16:00</div><div class="day-slot">Faculty Research Talk<span class="session-meta">Sang Kil Cha · Building Trust in Software</span></div></div>
+            <div class="day-row"><div class="day-time">16:00–16:30</div><div class="day-slot">Faculty Research Talk<span class="session-meta">Jun Han · Sensing-augmented Physical AI</span></div></div>
             <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Day 1 Wrap-up</div></div>
-            <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Themed Welcome Dinners</div></div>
+            <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Flexible Dinner</div></div>
           </div>
 
           <div class="day-card">
             <div class="day-title">Tuesday, Sep. 8 · Community &amp; Research</div>
-            <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Faculty Research Talks</div></div>
-            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Faculty Research Talk(s) and/or Parallel Lab Tours</div></div>
+            <div class="day-row"><div class="day-time">10:00–10:30</div><div class="day-slot">Faculty Research Talk<span class="session-meta">Min Suk Kang · Emerging Cyber Threats and Agentic-Programmable Defenses</span></div></div>
+            <div class="day-row"><div class="day-time">10:30–11:00</div><div class="day-slot">Faculty Research Talk<span class="session-meta">Minhyuk Sung · Generative Modeling Beyond Scale</span></div></div>
+            <div class="day-row"><div class="day-time">11:00–11:15</div><div class="day-slot">Break</div></div>
+            <div class="day-row"><div class="day-time">11:15–11:45</div><div class="day-slot">Faculty Research Talk<span class="session-meta">Sung-eui Yoon · Scalable Spatial and Embodied Intelligence</span></div></div>
+            <div class="day-row"><div class="day-time">11:45–12:00</div><div class="day-slot">Q&amp;A / Transition</div></div>
             <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Lunch with KAIST Students from Your Home Country</div></div>
             <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">FUN Activity</div></div>
-            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">Student-led Demonstrations &amp; Activities</div></div>
-            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Parallel Research Exploration</div></div>
-            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Open Networking / Day Wrap-up</div></div>
+            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">Lab Visits</div></div>
+            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Lab Visits</div></div>
+            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Day 2 Wrap-up</div></div>
             <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Flexible Dinner</div></div>
           </div>
 
           <div class="day-card">
             <div class="day-title">Wednesday, Sep. 9 · Research Exploration</div>
-            <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Faculty Research Talks</div></div>
-            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Faculty Research Talk(s) and/or Parallel Lab Tours</div></div>
+            <div class="day-row"><div class="day-time">10:00–10:30</div><div class="day-slot">Faculty Research Talk<span class="session-meta">Martin Ziegler · Computer Science for CONTINUOUS Data</span></div></div>
+            <div class="day-row"><div class="day-time">10:30–11:00</div><div class="day-slot">Faculty Research Talk<span class="session-meta">Daehyung Park · Robust Intelligence &amp; Robotics</span></div></div>
+            <div class="day-row"><div class="day-time">11:00–11:15</div><div class="day-slot">Break</div></div>
+            <div class="day-row"><div class="day-time">11:15–11:45</div><div class="day-slot">Faculty Research Talk<span class="session-meta">Alice Oh · Multilingual Multicultural LLMs</span></div></div>
+            <div class="day-row"><div class="day-time">11:45–12:00</div><div class="day-slot">Q&amp;A / Transition</div></div>
             <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Lunch with Graduate Students by Research Area I</div></div>
-            <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">FUN Activity</div></div>
-            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">Research Demos / Lab Visits / Student Interaction</div></div>
-            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Parallel Research Exploration</div></div>
-            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Open Networking / Day Wrap-up</div></div>
+            <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">KAIST Visitor Center Tour</div></div>
+            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">Lab Visits</div></div>
+            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Lab Visits</div></div>
+            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Day 3 Wrap-up</div></div>
             <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Flexible Dinner</div></div>
           </div>
 
           <div class="day-card">
             <div class="day-title">Thursday, Sep. 10 · Research &amp; Closing</div>
-            <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Faculty Research Talks / Special Session</div></div>
-            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Parallel Research Exploration</div></div>
+            <div class="day-row"><div class="day-time">10:00–10:30</div><div class="day-slot">Faculty Research Talk<span class="session-meta">Joseph Seering · Multi-Level Foundations for Social Simulation</span></div></div>
+            <div class="day-row"><div class="day-time">10:30–11:00</div><div class="day-slot">KAIST SoC &amp; Graduate Admissions for International Students<span class="session-meta">Youngjin Kwon</span></div></div>
+            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Continued Discussion &amp; Q&amp;A</div></div>
             <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Lunch with Graduate Students by Research Area II</div></div>
-            <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">Security@KAIST Poster Session</div></div>
-            <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">FUN Activity</div></div>
-            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Ask Us Anything: Graduate Study at KAIST</div></div>
+            <div class="day-row"><div class="day-time">13:30–15:30</div><div class="day-slot">Security@KAIST Poster Session</div></div>
+            <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Lab Visits</div></div>
             <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">Closing Session</div></div>
             <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Flexible Dinner</div></div>
           </div>
 
           <div class="day-card">
             <div class="day-title">Friday, Sep. 11 · Seoul Experience</div>
-            <div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">Travel to Seoul / Seoul Program</div></div>
-            <div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">Seoul Program</div></div>
+            <div class="day-row"><div class="day-time">Morning</div><div class="day-slot">Travel to Seoul / Seoul Program</div></div>
             <div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">Group Lunch in Seoul</div></div>
             <div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">Technology / Industry / Cultural Visit</div></div>
             <div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">Seoul Program / Cultural Experience</div></div>
             <div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">Cultural / Free Exploration</div></div>
-            <div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">—</div></div>
             <div class="day-row"><div class="day-time">Evening</div><div class="day-slot">Back to Daejeon</div></div>
           </div>
         </div>
