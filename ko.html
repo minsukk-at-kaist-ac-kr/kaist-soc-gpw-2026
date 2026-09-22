@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<title>KAIST 전산학부 Global Preview Week 2026</title>
+<meta content="KAIST 전산학부 Global Preview Week 2026 프로그램 일정, 주요 활동 결과 및 참가자 설문 결과." name="description"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GB5215L1R8"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GB5215L1R8');
+  </script>
+<style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #5c667a;
+      --line: #d9e0ee;
+      --accent: #143c8c;
+      --accent2: #2f6bd8;
+      --soft: #eaf1ff;
+      --gold: #fff5cf;
+      --gold-line: #e6c65b;
+      --gold-text: #5a4300;
+      --green: #e7f8ef;
+      --green-line: #87d2a7;
+      --green-text: #13542e;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 22px; }
+    header {
+      color: white;
+      padding: 28px 0 48px;
+      background:
+        linear-gradient(90deg, rgba(9,28,68,.86) 0%, rgba(20,60,140,.72) 48%, rgba(47,107,216,.48) 100%),
+        url('assets/kaist-1.jpg') center/cover no-repeat;
+    }
+    .topbar { display:flex; align-items:center; justify-content:space-between; gap:18px; margin-bottom:38px; }
+    .logo { display:inline-flex; align-items:center; gap:12px; padding:0; border-radius:0; background:transparent; box-shadow:none; }
+    .logo img { height:56px; width:auto; display:block; filter: drop-shadow(0 2px 10px rgba(255,255,255,.45)) drop-shadow(0 2px 8px rgba(0,0,0,.28)); }
+    .logo span { display:none; }
+    .toplinks { display:flex; align-items:center; gap:8px; }
+    .toplink { color:#fff; font-weight:750; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25); padding:9px 12px; border-radius:999px; }
+    .langlink { color:#fff; font-weight:750; font-size:13px; background:rgba(9,28,68,.32); border:1px solid rgba(255,255,255,.25); padding:7px 10px; border-radius:999px; }
+    .eyebrow { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; opacity: .9; }
+    h1 { font-size: clamp(34px, 5vw, 58px); line-height: 1.07; margin: 12px 0 16px; max-width:980px; }
+    .lead { font-size: 20px; max-width: 940px; opacity: .98; margin: 0 0 18px; text-shadow:0 1px 0 rgba(0,0,0,.15); }
+    .hero-actions { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top: 10px; }
+    .button {
+      display: inline-block; background: white; color: var(--accent);
+      padding: 12px 16px; border-radius: 12px; font-weight: 800;
+      border: 1px solid rgba(255,255,255,.28); box-shadow: 0 6px 18px rgba(12,30,70,.18);
+    }
+    .button:hover { text-decoration: none; background: #eef4ff; }
+    .hero-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 28px; }
+    .hero-card { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.26); border-radius: 16px; padding: 18px; backdrop-filter: blur(3px); }
+    .hero-card strong { display: block; font-size: 15px; opacity: .84; margin-bottom: 4px; }
+    .hero-card span { font-size: 18px; font-weight: 760; }
+    .hero-card.highlight { background: rgba(255,245,207,.22); border-color: rgba(255,245,207,.72); }
+    nav { background: var(--card); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 2; }
+    nav .wrap { display: flex; gap: 20px; padding-top: 12px; padding-bottom: 12px; overflow-x: auto; }
+    nav a { color: var(--text); font-weight: 650; font-size: 14px; white-space: nowrap; }
+    section { padding: 42px 0; }
+    h2 { font-size: 30px; line-height: 1.2; margin: 0 0 16px; }
+    h3 { font-size: 20px; margin: 0 0 8px; }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: 0 8px 20px rgba(23,32,51,.04); }
+    .note { background: #fff8e6; border: 1px solid #f3d58c; border-radius: 16px; padding: 18px; color: #4d3a09; }
+    .source { font-size: 12px; color: var(--muted); margin-top: 10px; }
+
+    .schedule-shell {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(23,32,51,.04);
+    }
+    .schedule-scroll { overflow-x: auto; }
+    .schedule-table {
+      width: 100%;
+      min-width: 1040px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .schedule-table th,
+    .schedule-table td {
+      padding: 15px 14px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+    .schedule-table th:last-child,
+    .schedule-table td:last-child { border-right: 0; }
+    .schedule-table tbody tr:last-child td { border-bottom: 0; }
+    .schedule-table thead th {
+      background: #eef3fb;
+      color: var(--accent);
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 850;
+    }
+    .schedule-table thead th:first-child { width: 105px; }
+    .schedule-table .date { display:block; color: var(--muted); font-weight:650; margin-top:2px; }
+    .schedule-table .time {
+      background: #fafbfd;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .schedule-table .slot {
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 700;
+      background: #fff;
+    }
+    .schedule-table .lunch { background: #fffdf3; }
+    .schedule-table .research { background: #f6f9ff; }
+    .schedule-table .closing { background: #f8fffb; }
+    .schedule-table .empty { color: #9aa4b5; font-weight: 600; }
+    .schedule-caption { padding: 14px 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+
+    .mobile-schedule { display:none; }
+    .day-card { background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:0 8px 20px rgba(23,32,51,.04); }
+    .day-card + .day-card { margin-top:16px; }
+    .day-title { background:#eef3fb; color:var(--accent); font-weight:850; padding:14px 16px; }
+    .day-row { display:grid; grid-template-columns:92px 1fr; border-top:1px solid var(--line); }
+    .day-time { background:#fafbfd; color:var(--accent); font-weight:800; font-size:12px; padding:12px 11px; }
+    .day-slot { padding:12px 14px; font-weight:680; font-size:14px; }
+
+    .session-meta { display:block; margin-top:4px; color:var(--muted); font-size:12px; font-weight:650; line-height:1.35; }
+    .schedule-table .break { background:#fafbfd; color:var(--muted); font-weight:650; }
+    .info-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+    footer { padding: 34px 0 52px; color: var(--muted); border-top: 1px solid var(--line); background: #fff; }
+
+
+    .button-secondary { background:rgba(255,255,255,.15); color:#fff; }
+    .button-secondary:hover { background:rgba(255,255,255,.24); }
+    .section-kicker { color:var(--accent2); font-size:13px; font-weight:850; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+    .results-intro { max-width:900px; font-size:17px; }
+    .stat-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin:24px 0 10px; }
+    .stat-card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:0 8px 20px rgba(23,32,51,.04); }
+    .stat-number { color:var(--accent); font-size:32px; line-height:1; font-weight:900; letter-spacing:-.03em; }
+    .stat-label { margin-top:8px; color:var(--muted); font-size:13px; font-weight:700; line-height:1.35; }
+    .feature-photo { margin:26px 0; background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 8px 20px rgba(23,32,51,.04); }
+    .feature-photo img { width:100%; max-height:650px; object-fit:cover; display:block; }
+    .feature-photo figcaption, .photo-card figcaption { color:var(--muted); font-size:12px; padding:10px 12px; }
+    .result-block { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:24px; align-items:start; margin-top:34px; }
+    .result-copy { padding:6px 0; }
+    .result-copy h3 { color:var(--accent); font-size:24px; }
+    .result-copy .daytag { display:inline-block; margin-bottom:8px; padding:4px 9px; border-radius:999px; background:var(--soft); color:var(--accent); font-size:12px; font-weight:850; }
+    .photo-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+    .photo-grid.three { grid-template-columns:repeat(3,1fr); }
+    .photo-card { margin:0; background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+    .photo-card img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+    .photo-card.wide { grid-column:span 2; }
+    .photo-card.wide img { aspect-ratio:16/9; }
+    #highlights { background:linear-gradient(180deg,#f4f7fc 0%,#f8faff 100%); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    #survey { background:#fff; }
+    .survey-note { background:#f6f9ff; border:1px solid #dbe6fb; border-radius:14px; padding:14px 16px; color:#41506b; font-size:13px; }
+    .impact-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:26px; }
+    .impact-card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px; }
+    .impact-card h3 { color:var(--accent); font-size:18px; margin-bottom:12px; }
+    .stackbar { height:24px; display:flex; overflow:hidden; border-radius:999px; background:#edf1f7; margin:10px 0 8px; }
+    .seg1 { background:#143c8c; }
+    .seg2 { background:#5f8ce5; }
+    .seg3 { background:#bcc9df; }
+    .legend { display:flex; flex-wrap:wrap; gap:8px 14px; color:var(--muted); font-size:12px; }
+    .legend span::before { content:''; display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px; background:#143c8c; }
+    .legend .l2::before { background:#5f8ce5; }
+    .legend .l3::before { background:#bcc9df; }
+    .bar-group { margin-top:26px; }
+    .bar-group h3 { color:var(--accent); margin-bottom:14px; }
+    .bar-row { display:grid; grid-template-columns:minmax(190px,1fr) 2.4fr 48px; gap:12px; align-items:center; margin:10px 0; }
+    .bar-label { font-size:13px; font-weight:700; color:#344158; }
+    .bar-track { height:12px; border-radius:999px; background:#edf1f7; overflow:hidden; }
+    .bar-fill { height:100%; border-radius:999px; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+    .bar-value { text-align:right; font-weight:850; color:var(--accent); font-size:13px; }
+    .feedback-columns { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:30px; }
+    .quote-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:16px; }
+    blockquote.quote { margin:0; background:#f8faff; border:1px solid #dce6f8; border-left:4px solid var(--accent2); border-radius:14px; padding:18px; color:#2c3950; font-size:14px; }
+    blockquote.quote footer { border:0; background:transparent; padding:8px 0 0; color:var(--muted); font-size:11px; }
+    .learning-card { background:#fff8e6; border:1px solid #f3d58c; border-radius:16px; padding:20px; }
+    .learning-card h3 { color:#6b5100; }
+    .final-gallery { display:grid; grid-template-columns:2fr 1fr; gap:12px; margin-top:24px; }
+    .final-gallery figure { margin:0; }
+    .final-gallery img { width:100%; height:100%; min-height:240px; object-fit:cover; border-radius:14px; display:block; }
+    @media (max-width: 990px) {
+      .stat-grid { grid-template-columns:repeat(3,1fr); }
+      .result-block { grid-template-columns:1fr; }
+      .photo-grid.three { grid-template-columns:repeat(2,1fr); }
+      .impact-grid, .feedback-columns { grid-template-columns:1fr; }
+    }
+    @media (max-width: 650px) {
+      .stat-grid { grid-template-columns:repeat(2,1fr); }
+      .photo-grid, .photo-grid.three, .quote-grid, .final-gallery { grid-template-columns:1fr; }
+      .photo-card.wide { grid-column:auto; }
+      .bar-row { grid-template-columns:1fr 54px; gap:6px 10px; }
+      .bar-track { grid-column:1 / -1; grid-row:2; }
+      .bar-value { grid-column:2; grid-row:1; }
+    }
+
+    @media (max-width: 990px) { .hero-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 760px) {
+      .hero-grid, .info-grid { grid-template-columns: 1fr; }
+      header { padding: 22px 0 34px; }
+      .topbar { align-items:flex-start; flex-direction:column; margin-bottom:28px; }
+      .schedule-shell { display:none; }
+      .mobile-schedule { display:block; }
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="topbar">
+<a class="logo" href="https://www.kaist.ac.kr/en/" rel="noopener" target="_blank"><img alt="KAIST logo" src="assets/kaist-logo.png"/><span>KAIST</span></a>
+<div class="toplinks"><a class="langlink" href="index.html" lang="en">English</a><a class="toplink" href="https://cs.kaist.ac.kr/" rel="noopener" target="_blank">전산학부</a></div>
+</div>
+<div class="eyebrow">KAIST 전산학부</div>
+<h1>Global Preview Week 2026</h1>
+<p class="lead">선발된 학생들이 KAIST 전산학부의 연구, 대학원 과정, 연구실 문화와 학생 생활을 직접 경험할 수 있도록 마련한 초청형 프로그램입니다.</p>
+<div class="hero-actions">
+<a class="button" href="#program">프로그램 일정 보기</a>
+<a class="button button-secondary" href="#highlights">프로그램 결과 보기</a>
+</div>
+<div class="hero-grid">
+<div class="hero-card"><strong>본 프로그램</strong><span>2026년 9월 7–11일</span></div>
+<div class="hero-card"><strong>입국 / 출국</strong><span>9월 6일 / 9월 12일</span></div>
+<div class="hero-card"><strong>장소</strong><span>KAIST 대전 캠퍼스 + 서울</span></div>
+<div class="hero-card highlight"><strong>프로그램 상태</strong><span>완료</span></div>
+</div>
+</div>
+</header>
+<nav>
+<div class="wrap">
+<a href="#program">프로그램 일정</a>
+<a href="#highlights">프로그램 주요 결과</a>
+<a href="#survey">참가자 설문 결과</a>
+<a href="#about">GPW 소개</a>
+<a href="#contact">문의</a>
+</div>
+</nav>
+<main>
+<section id="program">
+<div class="wrap">
+<h2>2026 프로그램 일정</h2>
+<p class="muted">2026년 프로그램은 교수 연구 발표, 연구실 방문, 학생·교수 교류, 캠퍼스 활동, 그리고 마지막 날 서울 문화 프로그램으로 구성되었습니다.</p>
+<div class="schedule-shell" style="margin-top:20px;">
+<div class="schedule-scroll">
+<table aria-label="KAIST SoC Global Preview Week 2026 프로그램 일정" class="schedule-table">
+<thead>
+<tr>
+<th>시간</th>
+<th>월요일<span class="date">9월 7일 · KAIST 방문 첫날</span></th>
+<th>화요일<span class="date">9월 8일 · 교류와 연구</span></th>
+<th>수요일<span class="date">9월 9일 · 연구 탐색</span></th>
+<th>목요일<span class="date">9월 10일 · 연구와 마무리</span></th>
+<th>금요일<span class="date">9월 11일 · 서울 체험</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="time">10:00–10:30</td>
+<td class="slot" rowspan="2">환영 및 KAIST 전산학부 소개</td>
+<td class="slot research">교수 연구 발표<span class="session-meta">Min Suk Kang · Emerging Cyber Threats and Agentic-Programmable Defenses</span></td>
+<td class="slot research">교수 연구 발표<span class="session-meta">Martin Ziegler · Computer Science for CONTINUOUS Data</span></td>
+<td class="slot research">교수 연구 발표<span class="session-meta">Joseph Seering · Multi-Level Foundations for Social Simulation</span></td>
+<td class="slot">서울 이동 / 서울 프로그램</td>
+</tr>
+<tr>
+<td class="time">10:30–11:00</td>
+<td class="slot research">교수 연구 발표<span class="session-meta">Minhyuk Sung · Generative Modeling Beyond Scale</span></td>
+<td class="slot research">교수 연구 발표<span class="session-meta">Daehyung Park · Robust Intelligence &amp; Robotics</span></td>
+<td class="slot">KAIST 전산학부 및 외국인 대학원 입학 안내<span class="session-meta">Youngjin Kwon</span></td>
+<td class="slot">서울 프로그램</td>
+</tr>
+<tr>
+<td class="time">11:00–11:15</td>
+<td class="slot" rowspan="3">참가자 소개 및 아이스브레이킹</td>
+<td class="slot break">휴식</td>
+<td class="slot break">휴식</td>
+<td class="slot" rowspan="3">계속되는 토론 및 질의응답</td>
+<td class="slot">서울 프로그램</td>
+</tr>
+<tr>
+<td class="time">11:15–11:45</td>
+<td class="slot research">교수 연구 발표<span class="session-meta">Sung-eui Yoon · Scalable Spatial and Embodied Intelligence</span></td>
+<td class="slot break">휴식</td>
+<td class="slot">서울 프로그램</td>
+</tr>
+<tr>
+<td class="time">11:45–12:00</td>
+<td class="slot break">질의응답 / 이동</td>
+<td class="slot break">질의응답 / 이동</td>
+<td class="slot">서울 프로그램</td>
+</tr>
+<tr>
+<td class="time">12:00–13:30</td>
+<td class="slot lunch">교수진과 함께하는 환영 점심</td>
+<td class="slot lunch">KAIST 대학원생과의 점심</td>
+<td class="slot lunch">자유 점심</td>
+<td class="slot lunch">자유 점심</td>
+<td class="slot lunch">서울 단체 점심</td>
+</tr>
+<tr>
+<td class="time">13:30–14:30</td>
+<td class="slot">친교 활동</td>
+<td class="slot">친교 활동</td>
+<td class="slot">KAIST 홍보관 방문</td>
+<td class="slot research" rowspan="2">Security@KAIST 포스터 세션</td>
+<td class="slot">기술 / 산업 / 문화 방문</td>
+</tr>
+<tr>
+<td class="time">14:30–15:00</td>
+<td class="slot" rowspan="2">KAIST 캠퍼스 투어 / 비전관</td>
+<td class="slot research" rowspan="2">연구실 방문</td>
+<td class="slot research" rowspan="2">연구실 방문</td>
+<td class="slot" rowspan="2">서울 프로그램 / 문화 체험</td>
+</tr>
+<tr>
+<td class="time">15:00–15:30</td>
+<td class="slot research">교수 연구 발표<span class="session-meta">Alice Oh · Multilingual Multicultural LLMs</span></td>
+</tr>
+<tr>
+<td class="time">15:30–16:00</td>
+<td class="slot research">교수 연구 발표<span class="session-meta">Sang Kil Cha · Building Trust in Software</span></td>
+<td class="slot research" rowspan="2">연구실 방문</td>
+<td class="slot research" rowspan="2">연구실 방문</td>
+<td class="slot research" rowspan="2">연구실 방문</td>
+<td class="slot" rowspan="2">문화 / 자유 탐방</td>
+</tr>
+<tr>
+<td class="time">16:00–16:30</td>
+<td class="slot research">교수 연구 발표<span class="session-meta">Jun Han · Sensing-augmented Physical AI</span></td>
+</tr>
+<tr>
+<td class="time">16:30–17:00</td>
+<td class="slot">1일차 마무리</td>
+<td class="slot">2일차 마무리</td>
+<td class="slot">3일차 마무리</td>
+<td class="slot closing">폐회 세션</td>
+<td class="slot empty">—</td>
+</tr>
+<tr>
+<td class="time">저녁</td>
+<td class="slot">자유 저녁</td>
+<td class="slot">자유 저녁</td>
+<td class="slot">자유 저녁</td>
+<td class="slot">자유 저녁</td>
+<td class="slot">대전 복귀</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="schedule-caption">위 일정은 2026 GPW 프로그램을 반영합니다. 일부 현장 활동은 행사 기간 중 소폭 조정되었습니다.</div>
+</div>
+<div class="mobile-schedule" style="margin-top:20px;">
+<div class="day-card">
+<div class="day-title">월요일, 9월 7일 · KAIST 방문 첫날</div>
+<div class="day-row"><div class="day-time">10:00–11:00</div><div class="day-slot">환영 및 KAIST 전산학부 소개</div></div>
+<div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">참가자 소개 및 아이스브레이킹</div></div>
+<div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">교수진과 함께하는 환영 점심</div></div>
+<div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">친교 활동</div></div>
+<div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">KAIST 캠퍼스 투어 / 비전관</div></div>
+<div class="day-row"><div class="day-time">15:30–16:00</div><div class="day-slot">교수 연구 발표<span class="session-meta">Sang Kil Cha · Building Trust in Software</span></div></div>
+<div class="day-row"><div class="day-time">16:00–16:30</div><div class="day-slot">교수 연구 발표<span class="session-meta">Jun Han · Sensing-augmented Physical AI</span></div></div>
+<div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">1일차 마무리</div></div>
+<div class="day-row"><div class="day-time">저녁</div><div class="day-slot">자유 저녁</div></div>
+</div>
+<div class="day-card">
+<div class="day-title">화요일, 9월 8일 · 교류와 연구</div>
+<div class="day-row"><div class="day-time">10:00–10:30</div><div class="day-slot">교수 연구 발표<span class="session-meta">Min Suk Kang · Emerging Cyber Threats and Agentic-Programmable Defenses</span></div></div>
+<div class="day-row"><div class="day-time">10:30–11:00</div><div class="day-slot">교수 연구 발표<span class="session-meta">Minhyuk Sung · Generative Modeling Beyond Scale</span></div></div>
+<div class="day-row"><div class="day-time">11:00–11:15</div><div class="day-slot">휴식</div></div>
+<div class="day-row"><div class="day-time">11:15–11:45</div><div class="day-slot">교수 연구 발표<span class="session-meta">Sung-eui Yoon · Scalable Spatial and Embodied Intelligence</span></div></div>
+<div class="day-row"><div class="day-time">11:45–12:00</div><div class="day-slot">질의응답 / 이동</div></div>
+<div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">KAIST 대학원생과의 점심</div></div>
+<div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">친교 활동</div></div>
+<div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">연구실 방문</div></div>
+<div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">연구실 방문</div></div>
+<div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">2일차 마무리</div></div>
+<div class="day-row"><div class="day-time">저녁</div><div class="day-slot">자유 저녁</div></div>
+</div>
+<div class="day-card">
+<div class="day-title">수요일, 9월 9일 · 연구 탐색</div>
+<div class="day-row"><div class="day-time">10:00–10:30</div><div class="day-slot">교수 연구 발표<span class="session-meta">Martin Ziegler · Computer Science for CONTINUOUS Data</span></div></div>
+<div class="day-row"><div class="day-time">10:30–11:00</div><div class="day-slot">교수 연구 발표<span class="session-meta">Daehyung Park · Robust Intelligence &amp; Robotics</span></div></div>
+<div class="day-row"><div class="day-time">11:00–11:15</div><div class="day-slot">휴식</div></div>
+<div class="day-row"><div class="day-time">11:15–11:45</div><div class="day-slot">휴식</div></div>
+<div class="day-row"><div class="day-time">11:45–12:00</div><div class="day-slot">질의응답 / 이동</div></div>
+<div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">자유 점심</div></div>
+<div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">KAIST 홍보관 방문</div></div>
+<div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">연구실 방문</div></div>
+<div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">연구실 방문</div></div>
+<div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">3일차 마무리</div></div>
+<div class="day-row"><div class="day-time">저녁</div><div class="day-slot">자유 저녁</div></div>
+</div>
+<div class="day-card">
+<div class="day-title">목요일, 9월 10일 · 연구와 마무리</div>
+<div class="day-row"><div class="day-time">10:00–10:30</div><div class="day-slot">교수 연구 발표<span class="session-meta">Joseph Seering · Multi-Level Foundations for Social Simulation</span></div></div>
+<div class="day-row"><div class="day-time">10:30–11:00</div><div class="day-slot">KAIST 전산학부 및 외국인 대학원 입학 안내<span class="session-meta">Youngjin Kwon</span></div></div>
+<div class="day-row"><div class="day-time">11:00–12:00</div><div class="day-slot">계속되는 토론 및 질의응답</div></div>
+<div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">자유 점심</div></div>
+<div class="day-row"><div class="day-time">13:30–15:00</div><div class="day-slot">Security@KAIST 포스터 세션</div></div>
+<div class="day-row"><div class="day-time">15:00–15:30</div><div class="day-slot">교수 연구 발표<span class="session-meta">Alice Oh · Multilingual Multicultural LLMs</span></div></div>
+<div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">연구실 방문</div></div>
+<div class="day-row"><div class="day-time">16:30–17:00</div><div class="day-slot">폐회 세션</div></div>
+<div class="day-row"><div class="day-time">저녁</div><div class="day-slot">자유 저녁</div></div>
+</div>
+<div class="day-card">
+<div class="day-title">금요일, 9월 11일 · 서울 체험</div>
+<div class="day-row"><div class="day-time">오전</div><div class="day-slot">서울 이동 / 서울 프로그램</div></div>
+<div class="day-row"><div class="day-time">12:00–13:30</div><div class="day-slot">서울 단체 점심</div></div>
+<div class="day-row"><div class="day-time">13:30–14:30</div><div class="day-slot">기술 / 산업 / 문화 방문</div></div>
+<div class="day-row"><div class="day-time">14:30–15:30</div><div class="day-slot">서울 프로그램 / 문화 체험</div></div>
+<div class="day-row"><div class="day-time">15:30–16:30</div><div class="day-slot">문화 / 자유 탐방</div></div>
+<div class="day-row"><div class="day-time">저녁</div><div class="day-slot">대전 복귀</div></div>
+</div>
+</div>
+</div>
+</section>
+<section id="highlights">
+<div class="wrap">
+<div class="section-kicker">2026 프로그램 결과</div>
+<h2>연구와 교류, 탐색으로 채운 일주일</h2>
+<p class="results-intro">9월 7일부터 11일까지 31명의 초청 학생이 KAIST 전산학부를 직접 경험하는 프로그램에 참여했습니다. 교수진의 연구, 연구실, 대학원생, 입학 과정, 캠퍼스 생활과 한국 유학 경험을 폭넓게 접하도록 구성했으며, 단순한 강연 중심의 방문이 아니라 소규모 대화와 직접적인 연구 경험을 중시했습니다.</p>
+<div class="stat-grid">
+<div class="stat-card"><div class="stat-number">31</div><div class="stat-label">초청 참가자</div></div>
+<div class="stat-card"><div class="stat-number">5</div><div class="stat-label">프로그램 운영일</div></div>
+<div class="stat-card"><div class="stat-number">9</div><div class="stat-label">교수 연구 발표</div></div>
+<div class="stat-card"><div class="stat-number">3</div><div class="stat-label">연구실 방문 운영일</div></div>
+<div class="stat-card"><div class="stat-number">1</div><div class="stat-label">서울 공동 문화 체험</div></div>
+</div>
+<figure class="feature-photo">
+<img alt="GPW participants in front of the KAIST School of Computing building" loading="lazy" src="assets/results/group-soc.jpeg"/>
+<figcaption>KAIST 전산학부에서 함께한 GPW 2026 참가자들.</figcaption>
+</figure>
+<div class="result-block">
+<div class="result-copy">
+<span class="daytag">월요일 · KAIST 방문 첫날</span>
+<h3>사람, 공간, 연구를 알아가는 것으로 시작</h3>
+<p>첫날은 환영 세션과 KAIST 전산학부 소개로 시작해 참가자 자기소개, 교수진과의 환영 점심으로 이어졌습니다. 친교 활동과 캠퍼스 탐방을 통해 참가자들이 빠르게 서로 친숙해졌고, 첫 교수 연구 발표를 통해 이후 일주일 동안 이어질 연구 중심의 분위기를 경험했습니다.</p>
+<p class="muted">첫날부터 교수진과 자연스럽게 대화할 수 있도록 구성해, 참가자들이 KAIST 전산학부의 학문적 환경과 공동체 분위기를 동시에 체감할 수 있도록 했습니다.</p>
+</div>
+<div class="photo-grid">
+<figure class="photo-card"><img alt="Welcome session for GPW participants" loading="lazy" src="assets/results/welcome-session.jpeg"/><figcaption>KAIST 전산학부 환영 및 소개</figcaption></figure>
+<figure class="photo-card"><img alt="Participants having lunch with KAIST faculty" loading="lazy" src="assets/results/lunch-faculty.jpeg"/><figcaption>교수진과 함께한 환영 점심</figcaption></figure>
+<figure class="photo-card"><img alt="Participants taking part in a small-group social activity" loading="lazy" src="assets/results/social-activity-1.jpeg"/><figcaption>소그룹 친교 활동</figcaption></figure>
+<figure class="photo-card"><img alt="GPW participants during a campus visit" loading="lazy" src="assets/results/campus-group.jpeg"/><figcaption>함께 둘러본 KAIST</figcaption></figure>
+</div>
+</div>
+<div class="result-block">
+<div class="result-copy">
+<span class="daytag">화요일·수요일 · 연구 몰입</span>
+<h3>교수 연구 발표에서 소그룹 연구실 방문까지</h3>
+<p>오전 연구 발표를 통해 사이버보안, 생성형 AI, 로보틱스, 이론 컴퓨터과학, 소프트웨어 보안, embodied intelligence 등 폭넓은 전산학 연구를 접했습니다. 오후에는 소그룹으로 연구실을 방문해 실제 연구 공간을 살펴보고 교수와 대학원 연구자들과 직접 대화했습니다.</p>
+<p>KAIST 대학원생들과의 점심과 비공식 활동은 연구 생활, 대학원 과정, KAIST 생활에 대해 솔직하게 이야기를 나눌 수 있는 또 다른 기회가 되었습니다.</p>
+</div>
+<div class="photo-grid three">
+<figure class="photo-card"><img alt="Participants meeting KAIST graduate students over lunch" loading="lazy" src="assets/results/lunch-grad-students.jpeg"/><figcaption>KAIST 대학원생과의 점심</figcaption></figure>
+<figure class="photo-card"><img alt="GPW students attending a lab visit presentation" loading="lazy" src="assets/results/lab-visit-1.jpeg"/><figcaption>연구실 방문</figcaption></figure>
+<figure class="photo-card"><img alt="Students discussing research during a lab visit" loading="lazy" src="assets/results/lab-visit-2.jpeg"/><figcaption>연구실에서의 연구 토론</figcaption></figure>
+<figure class="photo-card"><img alt="Students visiting a computing research lab" loading="lazy" src="assets/results/lab-visit-3.jpeg"/><figcaption>연구실에서 직접 만난 연구자들</figcaption></figure>
+<figure class="photo-card"><img alt="Participants enjoying a social activity" loading="lazy" src="assets/results/social-activity-2.jpeg"/><figcaption>대학을 넘어 이어진 교류</figcaption></figure>
+<figure class="photo-card"><img alt="Participants taking part in a group activity" loading="lazy" src="assets/results/social-activity-3.jpeg"/><figcaption>비공식 그룹 활동</figcaption></figure>
+</div>
+</div>
+<div class="result-block">
+<div class="result-copy">
+<span class="daytag">목요일 · 연구와 마무리</span>
+<h3>대학원 입학 안내, Security@KAIST, 그리고 마지막 연구 교류</h3>
+<p>목요일에는 KAIST 전산학부 대학원 과정과 입학에 관한 안내, Security@KAIST 포스터 세션, 교수 연구 발표, 마지막 연구실 방문이 이어졌습니다. 참가자들은 전반적인 대학원 정보에서 출발해 학생 연구자 및 연구 그룹과의 직접적인 대화까지 경험한 뒤 폐회 세션으로 프로그램을 마무리했습니다.</p>
+</div>
+<div class="photo-grid">
+<figure class="photo-card wide"><img alt="GPW participants at the Security at KAIST poster session" loading="lazy" src="assets/results/security-poster-session.jpeg"/><figcaption>Security@KAIST 포스터 세션</figcaption></figure>
+<figure class="photo-card"><img alt="Students listening to a lab presentation" loading="lazy" src="assets/results/lab-visit-4.jpeg"/><figcaption>마지막 날 연구실 방문</figcaption></figure>
+<figure class="photo-card"><img alt="Students meeting researchers during a lab visit" loading="lazy" src="assets/results/lab-visit-5.jpeg"/><figcaption>KAIST 연구자들과의 직접 교류</figcaption></figure>
+</div>
+</div>
+<div class="result-block">
+<div class="result-copy">
+<span class="daytag">금요일 · 서울 체험</span>
+<h3>함께한 문화 체험으로 일주일을 마무리</h3>
+<p>대전에서 연구 중심의 나흘을 보낸 뒤 금요일에는 서울에서 함께 시간을 보냈습니다. 문화 프로그램을 통해 한국을 함께 경험하고, 일주일 동안 쌓은 친분을 더욱 다지며 캠퍼스 밖의 공동 경험으로 GPW를 마무리했습니다.</p>
+</div>
+<figure class="photo-card"><img alt="GPW participants during the Seoul cultural program" loading="lazy" src="assets/results/seoul-group.jpg"/><figcaption>금요일 서울 문화 프로그램</figcaption></figure>
+</div>
+<div class="final-gallery">
+<figure><img alt="Participants at a closing group activity" loading="lazy" src="assets/results/closing-gathering.jpeg"/></figure>
+<figure><img alt="Participants at the airport after GPW" loading="lazy" src="assets/results/airport-departure.jpeg"/></figure>
+</div>
+</div>
+</section>
+<section id="survey">
+<div class="wrap">
+<div class="section-kicker">프로그램 종료 후 설문</div>
+<h2>GPW 참가자들이 전한 평가</h2>
+<p class="results-intro">프로그램 종료 후 익명 설문을 통해 GPW 경험, KAIST 전산학부에 대한 인식, 대학원 지원 의향, 향후 KAIST와의 연계 의향을 조사했습니다.</p>
+<div class="survey-note"><strong>설문 기준:</strong> 31명 중 20명이 익명 설문에 응답했습니다(응답률 65%). 아래 비율은 응답자를 기준으로 하며 가장 가까운 정수로 반올림했습니다. “전후 비교” 수치는 프로그램 종료 후 응답자가 회고적으로 평가한 결과입니다.</div>
+<div class="stat-grid">
+<div class="stat-card"><div class="stat-number">95%</div><div class="stat-label">GPW 전반 만족도에 5/5를 부여</div></div>
+<div class="stat-card"><div class="stat-number">100%</div><div class="stat-label">KAIST 전산학부에 대한 인상이 더 긍정적으로 변화</div></div>
+<div class="stat-card"><div class="stat-number">95%</div><div class="stat-label">KAIST 전산학부 지원 가능성이 증가</div></div>
+<div class="stat-card"><div class="stat-number">85%</div><div class="stat-label">지원할 가능성이 높거나 반드시 지원할 계획</div></div>
+<div class="stat-card"><div class="stat-number">95%</div><div class="stat-label">2027 여름 인턴십에 지원할 가능성이 높거나 반드시 지원할 의향</div></div>
+</div>
+<div class="impact-grid">
+<div class="impact-card">
+<h3>KAIST 전산학부에 대한 전반적 인상</h3>
+<p class="muted">GPW 참여 전과 비교</p>
+<div aria-label="90 퍼센트 훨씬 더 긍정적, 10 퍼센트 다소 더 긍정적" class="stackbar">
+<div class="seg1" style="width:90%"></div><div class="seg2" style="width:10%"></div>
+</div>
+<div class="legend"><span>90% 훨씬 더 긍정적</span><span class="l2">10% 다소 더 긍정적</span></div>
+</div>
+<div class="impact-card">
+<h3>KAIST 전산학부 지원 가능성</h3>
+<p class="muted">GPW 참여 전과 비교</p>
+<div aria-label="45 퍼센트 훨씬 더 높아짐, 50 퍼센트 다소 더 높아짐, 5 퍼센트 변화 없음" class="stackbar">
+<div class="seg1" style="width:45%"></div><div class="seg2" style="width:50%"></div><div class="seg3" style="width:5%"></div>
+</div>
+<div class="legend"><span>45% 훨씬 높아짐</span><span class="l2">50% 다소 높아짐</span><span class="l3">5% 변화 없음</span></div>
+</div>
+<div class="impact-card">
+<h3>대학원 진학지로서의 매력도</h3>
+<p class="muted">평균 평점: <strong>4.65 / 5</strong></p>
+<div aria-label="65 퍼센트 평점 5 out of 5, 35 퍼센트 평점 4 out of 5" class="stackbar">
+<div class="seg1" style="width:65%"></div><div class="seg2" style="width:35%"></div>
+</div>
+<div class="legend"><span>65%가 5/5</span><span class="l2">35%가 4/5</span></div>
+</div>
+<div class="impact-card">
+<h3>현재 지원 의향</h3>
+<p class="muted">“지원 가능성이 낮다” 또는 “절대 지원하지 않겠다”를 선택한 응답자는 없었습니다.</p>
+<div aria-label="40 퍼센트 반드시 지원할 계획, 45 퍼센트 지원 가능성 높음, 15 퍼센트 아직 미정" class="stackbar">
+<div class="seg1" style="width:40%"></div><div class="seg2" style="width:45%"></div><div class="seg3" style="width:15%"></div>
+</div>
+<div class="legend"><span>40% 반드시 지원할 계획</span><span class="l2">45% 지원할 가능성이 높음</span><span class="l3">15% 아직 미정</span></div>
+</div>
+</div>
+<div class="feedback-columns">
+<div class="bar-group">
+<h3>학생들이 꼽은 KAIST 전산학부의 강점</h3>
+<div class="bar-row"><div class="bar-label">우수한 교수진</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-value">100%</div></div>
+<div class="bar-row"><div class="bar-label">높은 수준의 연구</div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div><div class="bar-value">85%</div></div>
+<div class="bar-row"><div class="bar-label">흥미롭고 다양한 연구 분야</div><div class="bar-track"><div class="bar-fill" style="width:75%"></div></div><div class="bar-value">75%</div></div>
+<div class="bar-row"><div class="bar-label">연구비 / 재정 지원</div><div class="bar-track"><div class="bar-fill" style="width:75%"></div></div><div class="bar-value">75%</div></div>
+<div class="bar-row"><div class="bar-label">연구 시설 / 인프라</div><div class="bar-track"><div class="bar-fill" style="width:65%"></div></div><div class="bar-value">65%</div></div>
+<div class="bar-row"><div class="bar-label">수준 높은 논문 발표 기회</div><div class="bar-track"><div class="bar-fill" style="width:65%"></div></div><div class="bar-value">65%</div></div>
+</div>
+<div class="bar-group">
+<h3>GPW에서 가장 가치 있었던 요소</h3>
+<div class="bar-row"><div class="bar-label">다른 GPW 참가자들과의 교류</div><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><div class="bar-value">80%</div></div>
+<div class="bar-row"><div class="bar-label">교수 연구 발표</div><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div><div class="bar-value">70%</div></div>
+<div class="bar-row"><div class="bar-label">연구실 방문</div><div class="bar-track"><div class="bar-fill" style="width:65%"></div></div><div class="bar-value">65%</div></div>
+<div class="bar-row"><div class="bar-label">KAIST 교수진과의 대화</div><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><div class="bar-value">60%</div></div>
+<div class="bar-row"><div class="bar-label">대학원생과의 대화</div><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div><div class="bar-value">55%</div></div>
+</div>
+</div>
+<div class="impact-grid" style="margin-top:30px;">
+<div class="impact-card">
+<h3>향후 KAIST 프로그램 참여 의향</h3>
+<p><strong>95%</strong> KAIST 전산학부가 2027년 여름 국제 연구 인턴십을 운영할 경우 지원할 가능성이 높거나 반드시 지원하겠다고 응답했습니다.</p>
+<div aria-label="65 퍼센트 반드시 지원, 30 퍼센트 지원 가능성 높음, 5 퍼센트 고려 가능" class="stackbar">
+<div class="seg1" style="width:65%"></div><div class="seg2" style="width:30%"></div><div class="seg3" style="width:5%"></div>
+</div>
+<div class="legend"><span>65% 반드시 지원</span><span class="l2">30% 지원 가능성 높음</span><span class="l3">5% 고려 가능</span></div>
+</div>
+<div class="impact-card">
+<h3>대학원 진로 계획</h3>
+<p><strong>75%</strong> 현재 진로 계획에 KAIST 대학원 진학을 명시적으로 포함했습니다. 15%는 KAIST 대학원을 선택했고, 60%는 KAIST와 다른 대학원을 함께 고려하고 있었습니다.</p>
+<p class="muted">그 외 15%는 아직 미정이었고, 5%는 다른 대학원, 5%는 취업/산업계를 선택했습니다.</p>
+</div>
+</div>
+<div class="bar-group" style="margin-top:34px;">
+<h3>향후 프로그램을 위해 확인한 점</h3>
+<div class="feedback-columns" style="margin-top:12px;">
+<div class="learning-card">
+<h3>참가자들은 더 많은 교류를 원했습니다</h3>
+<p>가장 많이 제안된 개선 사항은 더 많은 사회·문화 활동(75%), 교수진과의 교류(50%), 대학원생과의 교류(45%), 연구실 방문(40%)이었습니다. 이는 소규모·관계 중심 프로그램이 참가자들에게 특히 가치 있었음을 보여줍니다.</p>
+</div>
+<div class="learning-card">
+<h3>향후 진학과 관련한 주요 우려</h3>
+<p>가장 많이 선택된 우려는 언어 장벽(55%), 졸업 후 진로 기회(45%), 문화 적응(40%)이었습니다. 향후 학생 모집과 후속 프로그램에서는 이러한 부분을 보다 직접적으로 안내할 필요가 있습니다.</p>
+</div>
+</div>
+</div>
+<h3 style="margin-top:36px;color:var(--accent);font-size:24px;">참가자들의 목소리</h3>
+<div class="quote-grid">
+<blockquote class="quote">“교수님과 대학원생들과 직접 이야기하면서 연구가 실제로 어떻게 진행되는지 더 잘 이해할 수 있었고, KAIST 대학원 진학이 훨씬 더 구체적이고 실현 가능한 선택으로 느껴졌습니다.”<footer>— 익명 GPW 참가자</footer></blockquote>
+<blockquote class="quote">“KAIST의 명성을 글로만 접하는 데서 그치지 않고 실제로 그곳에서 지내는 느낌을 경험하면서, 앞으로 그 공동체의 일부가 되고 싶다는 기대가 더 커졌습니다.”<footer>— 익명 GPW 참가자</footer></blockquote>
+<blockquote class="quote">“저에게 GPW에서 가장 좋았던 부분은 연구실 방문이었습니다. 연구실을 직접 보고 각 연구 그룹이 어떤 연구를 하는지 더 깊이 알 수 있어 정말 좋았습니다.”<footer>— 익명 GPW 참가자</footer></blockquote>
+<blockquote class="quote">“KAIST 전산학부에는 정말 뛰어난 사람들이 많고 연구하기 좋은 환경이 갖추어져 있다는 것을 느꼈습니다. 이렇게 열정적인 사람들과 함께 있으면 저도 더 성장하고 싶다는 마음이 듭니다.”<footer>— 익명 GPW 참가자</footer></blockquote>
+</div>
+</div>
+</section>
+<section id="about">
+<div class="wrap info-grid">
+<div class="card">
+<h2>Global Preview Week 소개</h2>
+<p>KAIST SoC Global Preview Week는 선발된 학생들에게 KAIST 전산학부의 연구 환경, 대학원 과정, 교수진, 연구실, 대학원생, 캠퍼스 생활을 직접 소개하기 위한 초청형 프로그램입니다.</p>
+<p>본 프로그램은 월요일부터 목요일까지 KAIST 대전 캠퍼스에서 진행되며, 금요일에는 하루 동안 서울 프로그램을 진행합니다.</p>
+</div>
+<div class="card">
+<h2>2026 참가자</h2>
+<p>첫해인 2026년에는 대만, 베트남, 태국, 말레이시아의 협력대학에서 선발된 31명의 학생이 KAIST를 방문해 일주일 동안 집중적인 연구 및 교류 프로그램에 참여했습니다.</p>
+<p class="muted">본 프로그램: 2026년 9월 7–11일 · 대전 및 서울</p>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="wrap">
+<h2>문의</h2>
+<div class="card">
+<p><strong>KAIST 전산학부</strong></p>
+<p>프로그램 문의: <strong>강민석 교수</strong> (전산학부 국제협력위원장; <a href="mailto:minsukk@kaist.ac.kr">minsukk@kaist.ac.kr</a>)</p>
+<p>학부 홈페이지: <a href="https://cs.kaist.ac.kr/" rel="noopener" target="_blank">KAIST 전산학부 공식 홈페이지</a></p>
+<p>KAIST 홈페이지: <a href="https://www.kaist.ac.kr/en/" rel="noopener" target="_blank">https://www.kaist.ac.kr/en/</a></p>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<p>KAIST SoC Global Preview Week 2026 · KAIST 전산학부 · 대전 및 서울</p>
+</div>
+</footer>
+</body>
+</html>
